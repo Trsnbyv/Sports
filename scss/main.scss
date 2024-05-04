@@ -18,10 +18,87 @@
   overflow: hidden;
 }
 body {
-  // font-family: ;
+  font-family: sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
 }
 .container {
-  // width: ;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.sport-label {
+  margin: 0 auto;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.sport-checkbox:checked ~ div > .sport-list {
+  height: 250px;
+}
+.sport-title {
+  font-size: 35px;
+  color: burlywood;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sport-list {
+  transition: all 0.3s linear;
+  height: 0;
+}
+.sport-list-item {
+  padding: 10px 15px;
+  background-color: rgb(225, 255, 195);
+  border: 2px solid transparent;
+  transition: border 0.3s linear;
+}
+.sport-list-item:hover {
+  border-radius: 5px;
+  border-color: rgb(153, 110, 0);
+}
+.sport-list-item p {
+  font-size: 22px;
+  color: rgb(153, 110, 0);
+  font-weight: 600;
+}
+.sport-item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.sport-item-input:checked ~ .sport-item-wrapper > .sport-item-img {
+  opacity: 1;
+}
+.sport-item-img {
+  transition: opacity 0.2s linear;
+  opacity: 0;
+}
+.hockey-text {
+  opacity: 0.7;
+}
+.hockey-img {
+  opacity: 0.5;
+}
+.sport-btn {
+  width: 150px;
+  border: 2px solid transparent;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 25px;
+  color: aquamarine;
+  background-color: chocolate;
+  transition: color 0.3s ease-in-out
+}
+.sport-btn:hover{
+  background-color: aquamarine;
+  color: chocolate;
+  border-color: chocolate;
 }

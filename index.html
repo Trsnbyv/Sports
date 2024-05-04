@@ -1,24 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tremplate</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport check</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
-</head>
-<body>
-    <header class="site-header">
-        <div class="container"></div>
-    </header>
+  </head>
+  <body>
     <main class="site-main">
-        <section class="hero-section">
-            <div class="container"></div>
-        </section>
+      <section class="hero-section">
+        <div class="container wrapper">
+          <form
+            action="https://echo.htmlacademy.ru"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <label class="sport-label">
+              <input type="checkbox" class="sport-checkbox visually-hidden" />
+              <div>
+                <h2 class="sport-title">Choose sport</h2>
+
+                <ul class="sport-list">
+                  <li class="sport-list-item">
+                    <label class="sport-item-label">
+                      <input name="football"  class="sport-item-input visually-hidden" type="checkbox" />
+                      <div class="sport-item-wrapper">
+                        <img
+                          class="sport-item-img"
+                          src="./images/football-logo.svg"
+                          width="30"
+                          height="30"
+                          alt="football-logo"
+                        />
+                        <p class="sport-item-text">Football</p>
+                      </div>
+                    </label>
+                  </li>
+                  <li class="sport-list-item">
+                    <label class="sport-item-label">
+                      <input name="basketball" class="sport-item-input visually-hidden" type="checkbox" />
+                      <div class="sport-item-wrapper">
+                        <img
+                          class="sport-item-img"
+                          src="./images/basketball-logo.svg"
+                          width="30"
+                          height="30"
+                          alt="basketball-logo"
+                        />
+                        <p class="sport-item-text">Basketball</p>
+                      </div>
+                    </label>
+                  </li>
+                  <li class="sport-list-item">
+                    <label class="sport-item-label">
+                      <input name="tennis" class="sport-item-input visually-hidden" type="checkbox" />
+                      <div class="sport-item-wrapper">
+                        <img
+                          class="sport-item-img"
+                          src="./images/tennis-logo.svg"
+                          width="30"
+                          height="30"
+                          alt="tennis-logo"
+                        />
+                        <p class="sport-item-text">Tennis</p>
+                      </div>
+                    </label>
+                  </li>
+                  <li class="sport-list-item">
+                    <label class="sport-item-label">
+                      <input name="hockey" class="sport-item-input visually-hidden hockey" type="checkbox" disabled />
+                      <div class="sport-item-wrapper">
+                        <img
+                          class="sport-item-img hockey-img"
+                          src="./images/hockey-logo.svg"
+                          width="30"
+                          height="30"
+                          alt="hockey-logo"
+                        />
+                        <p class="sport-item-text hockey-text">Hockey</p>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </label>
+            <button class="sport-btn" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer class="site-footer">
-        <div class="container"></div>
-    </footer>
-</body>
+  </body>
 </html>
